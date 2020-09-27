@@ -1,0 +1,76 @@
+$base-color: #0e3bc0;
+$target-el-color: #f39203;
+$text-color: white;
+
+main {
+    background-image:
+        url('/assets/bits/banner_light.png'),
+        url('/assets/bits/banner_light.png'),
+        url('/assets/bits/cut.png');
+    background-position:
+        top right,
+        bottom left,
+        bottom left;
+    background-repeat: no-repeat;
+    background-color: $base-color;
+    padding: 1rem 5rem;
+    position: relative;
+    height: 80vh;
+    
+    header {
+        padding-bottom: 1rem;
+        nav {
+            display: flex;
+            justify-content: space-between;
+    
+            .brand {
+                img {
+                    height: 1rem;
+                }
+            }
+    
+            ul {
+                list-style: none;
+                display: flex;
+                justify-content: space-around;
+                li {
+                    margin-left: 1rem;
+                }
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
+    section {
+        display: flex;
+        color: $text-color;
+        margin-top: 3rem;
+        button {
+            background-color: $target-el-color;
+            border: none;
+            padding: 0.5em;
+            border-radius: 3rem;
+            color: $text-color;
+        }
+        .banner-image-container {
+            height: 250px;
+            img {
+                width: auto;
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        padding: 1rem 1rem;
+        section .banner-image-container {
+            img {
+                height: 225px;
+            }
+        }
+    }
+  }
