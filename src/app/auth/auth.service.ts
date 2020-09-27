@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
 })
 export class AuthService {
 
-  isAuthDummy = true;
+  isAuthDummy = false;
   constructor(
     private router: Router
   ) { }
